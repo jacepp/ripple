@@ -1,4 +1,4 @@
-require 'riak'
+require 'riak-client'
 require 'erb'
 require 'yaml'
 require 'active_model'
