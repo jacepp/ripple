@@ -9,7 +9,7 @@ group :guard do
 end
 
 if File.directory?(File.expand_path("../../riak-client", __FILE__))
-  gem 'riak-client', :path => "../riak-client"
+  gem 'riak-client', :git => 'git@github.com:jacepp/riak-ruby-client.git', :branch => 'version-trim'
 end
 
 platforms :jruby do
