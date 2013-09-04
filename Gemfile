@@ -8,7 +8,9 @@ group :guard do
   gem 'growl'
 end
 
-gem 'riak-client', :git => 'git@github.com:jacepp/riak-ruby-client.git', :branch => 'version-trim'
+if File.directory?(File.expand_path("../../riak-client", __FILE__))
+  gem 'riak-client', :path => "../riak-client"
+end
 
 platforms :jruby do
   gem 'jruby-openssl'
